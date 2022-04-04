@@ -1,0 +1,238 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@700&display=swap');
+
+:root {
+    /*colors*/
+    --black: #222;
+    --white: #fff;
+
+    /*fonts*/
+    --headerFont: 'Roboto', sans-serif;
+    --bodyFont: 'Montserrat', sans-serif;
+
+    /*others*/
+    --borderRadius: 0.5rem;
+
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: var(--bodyFont);
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* navbar section*/
+.navbar {
+    display: flex;
+    background-color: #1F2937;
+    align-items: center;
+    padding: 3% 10%;
+    justify-content: space-between;
+}
+.nav-logo img {
+    width: 100px;
+    border-radius: var(--borderRadius);
+}
+
+.nav-links {
+    margin-right: 5rem;
+}
+.nav-link {
+    text-decoration: none;
+    margin-right: 8px;
+    color: var(--white);
+}
+
+/* header section*/
+
+.header-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 5rem;
+    background-color: #1F2937;
+
+}
+
+.header-cta {
+    color: #f9faf8;
+    padding-right: 1.5rem;
+    width: 400px;
+    margin-right: 5rem;
+    line-height: 1.5;
+
+}
+.header-cta p {
+    color: #e5e7eb;
+    margin-bottom: 1.2rem;
+}
+
+.btn {
+    background-color: #3882f6;
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
+    border-radius: var(--borderRadius);
+    color: #e5e7eb;
+}
+
+
+.header-img img {
+    margin-right: 5rem;
+    height: 21rem;
+    width: 31.5rem;
+    border-radius: var(--borderRadius);
+    font-weight: bold;
+}
+
+/*content section*/
+.content h2 {
+    text-align: center;
+    margin-top: 3.5rem;
+    text-transform: capitalize;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+}
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2% 5%;
+    text-align: center;
+    padding: 1rem 7rem;
+    /*max-width: 80%;*/
+}
+.content-info {
+    margin-right: 1rem;
+    margin-bottom: 3.5rem;
+
+}
+.card {
+    width: 250px;
+    height: 200px;
+
+
+
+
+
+    /*width: 350px;*/
+    /*height: 310px;*/
+}
+
+.card img {
+    width:250px;
+    height:200px;
+    border-radius: var(--borderRadius);
+}
+
+.card p {
+    margin-top: 1rem;
+    color: #616664;
+}
+
+
+/* quote section*/
+.quote {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 25rem;
+}
+
+blockquote {
+    display: flex;
+    justify-content: center;
+}
+
+blockquote > p {
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.5;
+    width: 70rem;
+    font-weight: lighter;
+}
+
+cite {
+    padding-left: 50rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* call to action section*/
+
+.cta-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+
+}
+
+.cta-info {
+    color: #e5e7eb;
+    background-color: #3882f6;
+    height: 7rem;
+    width: 60rem;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2.2rem;
+
+
+}
+
+.cta-text {
+    display: block;
+    padding-left: 6.2rem;
+    line-height: 1.5;
+}
+
+
+.signup-btn {
+    margin-right: 10rem;
+}
+.cta-btn {
+    background-color: #3882f6;
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
+    border-radius: var(--borderRadius);
+    border: 1px solid #e5e7eb;
+    color: #e5e7eb;
+    box-shadow: 2px 2px 2px 2px rgba(6, 53, 73, 0.2);
+}
+
+.cta-btn:active {
+    background-color: #073986;
+}
+
+
+
+
+/*Footer*/
+.page-footer {
+    background-color: #1F2937;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-footer p{
+    color: var(--white);
+
+}
